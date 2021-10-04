@@ -1,9 +1,42 @@
 # JS-Core-Interview-Tasks
 practical Tasks for JS core interview
+- [Variables, Values, Types](#variables-values-types)
 - [Advanced Functions](#advanced-functions-this-)
 - [Closures](#closures)
 
-###Advanced Functions (arguments, 'this' scope, call, apply methods, recursion)
+
+
+### Variables values types
+
+```javascript
+let a = 5;
+
+function test() {
+    a = 10;
+    
+    return a;
+    
+    function a(){};
+}
+```
+Temporary dead zone(easy)
+```javascript
+console.log(a);
+let a = 5;
+```
+
+```javascript
+let a = 5;
+
+function test() {
+   console.log(a);
+   
+  let a = 10;
+}
+```
+
+
+### Advanced Functions (arguments, 'this' scope, call, apply methods, recursion)
 
 ##### Advanced Functions (*this* )
 
